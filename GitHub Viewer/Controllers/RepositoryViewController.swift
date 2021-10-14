@@ -65,7 +65,6 @@ class RepositoryViewController: UITableViewController {
                 cell.accessoryType = .none
                 cell.repositoryTitle?.text = "No repository found"
                 cell.repositorySubtitle?.text = ""
-                
             }
         }
         return cell
@@ -85,7 +84,6 @@ class RepositoryViewController: UITableViewController {
         if let indexPath = tableView.indexPathForSelectedRow {
             destinationVC.repository = repository?[indexPath.row]
         }
-        
     }
 }
 

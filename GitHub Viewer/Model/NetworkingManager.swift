@@ -66,7 +66,6 @@ struct NetworkingManager {
             }
             return repositoryArray
             
-            
         } catch {
             delegate?.didFailWithError("parseJSON", error)
             return nil
