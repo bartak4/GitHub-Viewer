@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		5B90DB0C2715B0AF009DC708 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B90DB0B2715B0AF009DC708 /* AppDelegate.swift */; };
 		5B90DB0E2715B0AF009DC708 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B90DB0D2715B0AF009DC708 /* SceneDelegate.swift */; };
-		5B90DB102715B0AF009DC708 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B90DB0F2715B0AF009DC708 /* ViewController.swift */; };
+		5B90DB102715B0AF009DC708 /* RepositoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B90DB0F2715B0AF009DC708 /* RepositoryViewController.swift */; };
 		5B90DB132715B0AF009DC708 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B90DB112715B0AF009DC708 /* Main.storyboard */; };
 		5B90DB152715B0B1009DC708 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B90DB142715B0B1009DC708 /* Assets.xcassets */; };
 		5B90DB182715B0B1009DC708 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B90DB162715B0B1009DC708 /* LaunchScreen.storyboard */; };
+		5B90DB202715B12A009DC708 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B90DB1F2715B12A009DC708 /* NetworkingManager.swift */; };
+		5B90DB222715B13C009DC708 /* RepositoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B90DB212715B13C009DC708 /* RepositoryModel.swift */; };
+		5B90DB242715B151009DC708 /* RepositoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B90DB232715B151009DC708 /* RepositoryData.swift */; };
+		5B90DB292715CB42009DC708 /* DetailWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B90DB282715CB42009DC708 /* DetailWebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5B90DB082715B0AF009DC708 /* GitHub Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitHub Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B90DB0B2715B0AF009DC708 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B90DB0D2715B0AF009DC708 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5B90DB0F2715B0AF009DC708 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5B90DB0F2715B0AF009DC708 /* RepositoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryViewController.swift; sourceTree = "<group>"; };
 		5B90DB122715B0AF009DC708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5B90DB142715B0B1009DC708 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B90DB172715B0B1009DC708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B90DB192715B0B1009DC708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B90DB1F2715B12A009DC708 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		5B90DB212715B13C009DC708 /* RepositoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryModel.swift; sourceTree = "<group>"; };
+		5B90DB232715B151009DC708 /* RepositoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryData.swift; sourceTree = "<group>"; };
+		5B90DB282715CB42009DC708 /* DetailWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,41 @@
 			children = (
 				5B90DB0B2715B0AF009DC708 /* AppDelegate.swift */,
 				5B90DB0D2715B0AF009DC708 /* SceneDelegate.swift */,
-				5B90DB0F2715B0AF009DC708 /* ViewController.swift */,
-				5B90DB112715B0AF009DC708 /* Main.storyboard */,
+				5B90DB252715B158009DC708 /* Model */,
+				5B90DB272715B173009DC708 /* Views */,
+				5B90DB262715B164009DC708 /* Controllers */,
 				5B90DB142715B0B1009DC708 /* Assets.xcassets */,
 				5B90DB162715B0B1009DC708 /* LaunchScreen.storyboard */,
 				5B90DB192715B0B1009DC708 /* Info.plist */,
 			);
 			path = "GitHub Viewer";
+			sourceTree = "<group>";
+		};
+		5B90DB252715B158009DC708 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5B90DB1F2715B12A009DC708 /* NetworkingManager.swift */,
+				5B90DB212715B13C009DC708 /* RepositoryModel.swift */,
+				5B90DB232715B151009DC708 /* RepositoryData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5B90DB262715B164009DC708 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5B90DB0F2715B0AF009DC708 /* RepositoryViewController.swift */,
+				5B90DB282715CB42009DC708 /* DetailWebViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5B90DB272715B173009DC708 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B90DB112715B0AF009DC708 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +173,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B90DB102715B0AF009DC708 /* ViewController.swift in Sources */,
+				5B90DB292715CB42009DC708 /* DetailWebViewController.swift in Sources */,
+				5B90DB102715B0AF009DC708 /* RepositoryViewController.swift in Sources */,
+				5B90DB222715B13C009DC708 /* RepositoryModel.swift in Sources */,
+				5B90DB202715B12A009DC708 /* NetworkingManager.swift in Sources */,
 				5B90DB0C2715B0AF009DC708 /* AppDelegate.swift in Sources */,
 				5B90DB0E2715B0AF009DC708 /* SceneDelegate.swift in Sources */,
+				5B90DB242715B151009DC708 /* RepositoryData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +333,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "MB.GitHub-Viewer";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MB.GitHub-Viewer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -312,7 +352,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "MB.GitHub-Viewer";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MB.GitHub-Viewer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
